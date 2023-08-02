@@ -1,4 +1,4 @@
-# BloodXChange
+# BloodXChange🏥
 
 BloodXChange is a life-saving web application designed to bridge the gap between blood donors, hospitals, and organizations. This platform facilitates the seamless exchange of blood donations, ensuring a steady supply for those in need. The app caters to donors, hospitals, and organizations with an intuitive login and registration system, streamlining their involvement in this crucial process.
 
@@ -7,6 +7,7 @@ The Application was built using the following technologies:
 - ExpressJS
 - ReactJs
 - NodeJs
+  
 
 ## Screenshots:
 <p>
