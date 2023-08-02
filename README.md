@@ -6,7 +6,7 @@ The Application was built using the following technologies:
 - ReactJs
 - JavaScript
 - NodeJs
-- MySQL
+- MongoDB
 
 ## Screenshots:
 <p>
