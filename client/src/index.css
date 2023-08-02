@@ -13,12 +13,11 @@
 /* overriding antd button styles */
 button {
   border-radius: 0 !important;
-  box-shadow: none !important;
   height: 40px !important;
 }
 
 input , textarea , select{
-  min-height: 40px !important;
+  min-height: 20px !important;
   border: 1px solid #6a6a6a !important;
   border-radius: 2px !important;
   width: 100% !important;
@@ -26,7 +25,6 @@ input , textarea , select{
 
 input:focus , textarea:focus {
   outline: none !important;
-  box-shadow: none !important;
 }
 
 .ant-form-item {
@@ -50,3 +48,208 @@ table {
   border: 1px solid #9f9f9f !important;
   border-radius: 2px !important;
 }
+
+/* Responsive styles for extra small devices (xs) and above */
+@media (min-width: 480px) {
+  button {
+    height: 30px !important;
+  }
+  input , textarea , select{
+    min-height: 8px !important;
+    width: 100% !important;
+  }
+  
+  .ant-form-item {
+    margin-bottom: 0px !important;
+  }
+  
+  i{
+    font-size: 15px;
+  }
+  
+  .ant-form-item-label {
+    padding: 0px !important;
+  }
+}
+
+/* Responsive styles for small devices (sm) and above */
+@media (min-width: 576px) {
+  button {
+    border-radius: 0 !important;
+
+    height: 40px !important;
+  }
+  
+  input , textarea , select{
+    min-height: 40px !important;
+    border: 1px solid #6a6a6a !important;
+    border-radius: 2px !important;
+    width: 100% !important;
+  }
+  
+  input:focus , textarea:focus {
+    outline: none !important;
+
+  }
+  
+  .ant-form-item {
+    margin-bottom: 0 !important;
+  }
+  
+  a:hover {
+    text-decoration: underline !important;
+    color: #6a6a6a;
+  }
+  
+  i{
+    font-size: 18px;
+  }
+  
+  .ant-form-item-label {
+    padding: 0 !important;
+  }
+  
+  table {
+    border: 1px solid #9f9f9f !important;
+    border-radius: 2px !important;
+  }
+}
+
+/* Responsive styles for medium devices (md) and above */
+@media (min-width: 768px) {
+  button {
+    border-radius: 0 !important;
+
+    height: 40px !important;
+  }
+  
+  input , textarea , select{
+    min-height: 40px !important;
+    border: 1px solid #6a6a6a !important;
+    border-radius: 2px !important;
+    width: 100% !important;
+  }
+  
+  input:focus , textarea:focus {
+    outline: none !important;
+
+  }
+  
+  .ant-form-item {
+    margin-bottom: 0 !important;
+  }
+  
+  a:hover {
+    text-decoration: underline !important;
+    color: #6a6a6a;
+  }
+  
+  i{
+    font-size: 18px;
+  }
+  
+  .ant-form-item-label {
+    padding: 0 !important;
+  }
+  
+  table {
+    border: 1px solid #9f9f9f !important;
+    border-radius: 2px !important;
+  }
+}
+
+/* Responsive styles for large devices (lg) and above */
+@media (min-width: 992px) {
+  button {
+    border-radius: 0 !important;
+
+    height: 40px !important;
+  }
+  
+  input , textarea , select{
+    min-height: 40px !important;
+    border: 1px solid #6a6a6a !important;
+    border-radius: 2px !important;
+    width: 100% !important;
+  }
+  
+  input:focus , textarea:focus {
+    outline: none !important;
+
+  }
+  
+  .ant-form-item {
+    margin-bottom: 0 !important;
+  }
+  
+  a:hover {
+    text-decoration: underline !important;
+    color: #6a6a6a;
+  }
+  
+  i{
+    font-size: 18px;
+  }
+  
+  .ant-form-item-label {
+    padding: 0 !important;
+  }
+  
+  table {
+    border: 1px solid #9f9f9f !important;
+    border-radius: 2px !important;
+  }
+}
+
+/* Responsive styles for extra-large devices (xl) and above */
+@media (min-width: 1200px) {
+  button {
+    border-radius: 0 !important;
+
+    height: 40px !important;
+  }
+  
+  input , textarea , select{
+    min-height: 40px !important;
+    border: 1px solid #6a6a6a !important;
+    border-radius: 2px !important;
+    width: 100% !important;
+  }
+  
+  input:focus , textarea:focus {
+    outline: none !important;
+
+  }
+  
+  .ant-form-item {
+    margin-bottom: 0 !important;
+  }
+  
+  a:hover {
+    text-decoration: underline !important;
+    color: #6a6a6a;
+  }
+  
+  i{
+    font-size: 18px;
+  }
+  
+  .ant-form-item-label {
+    padding: 0 !important;
+  }
+  
+  table {
+    border: 1px solid #9f9f9f !important;
+    border-radius: 2px !important;
+  }
+}
+
+
+
+/* {
+  xs: '480px',
+  sm: '576px',
+  md: '768px',
+  lg: '992px',
+  xl: '1200px',
+} */

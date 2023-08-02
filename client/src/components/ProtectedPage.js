@@ -41,28 +41,39 @@ function ProtectedPage({ children }) {
     currentUser && (
       <div>
         {/* header */}
-        <div className="flex justify-between items-center bg-primary text-white px-5 py-3 rounded-b">
-          <div onClick={() => navigate("/")} className="cursor-pointer flex items-center gap-2">
-          <Image
+        <div className="flex justify-between xs:items-center bg-primary text-white px-5 py-3 rounded-b">
+          <div
+            onClick={() => navigate("/")}
+            className="cursor-pointer flex items-center gap-2"
+          >
+            <Image
               src="https://res.cloudinary.com/dpcpegpsn/image/upload/v1690879600/blood-pressure_nxmp6e.png" // Replace this with the path to your logo image
               alt="BLOODXCHANGE Logo"
               preview={false}
-              width={50} 
+              width={60}
             />
-            <div className="flex flex-col"></div>
-            <h1 className="text-2xl">BLOODXCHANGE</h1>
-           
+            <div className="flex flex-col">
+              <h1
+                className="text-xl
+            xs:text-xl 
+            sm:text-3xl 
+            md:text-3xl 
+            lg:text-3xl 
+            xl:text-3xl"
+              >
+                BLOODXCHANGE
+              </h1>
+              <span className="text-s">
+                {currentUser.userType.toUpperCase()}
+              </span>
+            </div>
           </div>
-          <span className="text-s">
-              {currentUser.userType.toUpperCase()}
-            </span>
-          
 
           <div className="flex items-center gap-1">
-          <i class="ri-user-3-fill"></i>
+            <i class="ri-user-3-fill"></i>
             <div className="flex flex-col">
               <span
-                className="mr-5 text-md cursor-pointer"
+                className="mr-0 text-md cursor-pointer"
                 onClick={() => navigate("/profile")}
               >
                 {getLoggedInUserName(currentUser).toUpperCase()}
@@ -70,7 +81,7 @@ function ProtectedPage({ children }) {
             </div>
 
             <i
-              className="ri-logout-circle-r-line ml-5 cursor-pointer"
+              className="ri-logout-circle-r-line xs:ml-0 cursor-pointer"
               onClick={() => {
                 localStorage.removeItem("token");
                 navigate("/login");
@@ -78,14 +89,21 @@ function ProtectedPage({ children }) {
             ></i>
           </div>
         </div>
-       
 
         {/* body */}
         <div className="px-5 py-5">{children}</div>
-        <Footer style={{ textAlign: 'center', position: 'fixed', bottom: 0, width: '100%', backgroundColor: '#f0f2f5' }}>BloodXChange ©2023 Created by Kumari Astha Rani</Footer>
-        
+        <Footer
+          style={{
+            textAlign: "center",
+            position: "fixed",
+            bottom: 0,
+            width: "100%",
+            backgroundColor: "#f0f2f5",
+          }}
+        >
+          BloodXChange ©2023 Created by Kumari Astha Rani
+        </Footer>
       </div>
-      
     )
   );
 }
