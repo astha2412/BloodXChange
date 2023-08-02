@@ -38,10 +38,10 @@ function Hospitals() {
       title: "Phone",
       dataIndex: "phone",
     },
-    {
-        title: "Address",
-        dataIndex: "address",
-    },
+    // {
+    //     title: "Address",
+    //     dataIndex: "address",
+    // },
     {
       title: "Created At",
       dataIndex: "createdAt",

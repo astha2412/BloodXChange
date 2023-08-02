@@ -45,7 +45,12 @@ function Home() {
     <div>
       {currentUser.userType === "organization" && (
         <>
-          <div className="grid grid-cols-4 gap-5 mb-5 mt-2">
+          <div className="grid gap-5 mb-4 mt-2 
+          xl:grid-cols-4
+          lg:grid-cols-4 
+          md:grid-cols-2 
+          sm:grid-cols-2
+          xs:grid-cols-2">
             {bloodGroupsData.map((bloodGroup, index) => {
               const color = colours[index];
               return (

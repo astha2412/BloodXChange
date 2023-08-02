@@ -41,7 +41,8 @@ function Register() {
     <div className="flex h-screen items-center justify-center bg-primary">
       <Form
         layout="vertical"
-        className="bg-white rounded shadow grid grid-cols-2 p-5 gap-5 w-1/2"
+        className="bg-white rounded shadow grid grid-cols-2 p-5 gap-5 w-1/2
+        xs:w-1/3"
         onFinish={onFinish}
       >
         <h1 className="col-span-2 uppercase text-2xl">
